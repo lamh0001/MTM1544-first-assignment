@@ -1,3 +1,37 @@
 /* MTM1544 Week 1: your stylesheet.
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
+
+/*this changes the background color of the page to tan*/   
+body {
+   background-color: tan;
+}   
+/*changes the color of all the paragraphs to brown and increase the line spacing*/
+p {
+   color: brown;
+   line-height: 2;
+}
+/*changes the color of all the h2 headings to yellow*/
+h2 {
+   color: yellow;
+   font-family: sans-serif;
+}
+/*groups the h2 headings and the paragraphs into one rule*/ 
+p,h2 {
+   font-style: italic;
+
+}
+/*styles the intro paragraph differently from the rest using the class selector*/
+.intro {
+   font-style: normal;
+   color: black;
+}
+/*styles the summit heading in a different color*/
+#summit {
+   color: blue;
+}
+/* to test that the later rule wins*/
+h2 {
+   color: black;
+}
+
