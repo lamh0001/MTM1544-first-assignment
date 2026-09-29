@@ -2,6 +2,36 @@
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
 
+/*Start of Week 2 Assignment: Box Model Card*/
+
+*{
+   box-sizing: border-box;
+}
+
+.intro{
+   width: 600px;
+   background-color: white;
+   border: 2.5px solid black;
+   padding: 22px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.second-paragraph {
+   margin-bottom: 35px;
+}
+.third-paragraph {
+   margin-top: 60px;
+}
+
+.cup-image{
+   width:100%;
+   aspect-ratio: 16/9;
+}
+/*End of Week 2 Assignment: Box Model Card*/
+
 /*this changes the background color of the page to tan*/   
 body {
    background-color: tan;
