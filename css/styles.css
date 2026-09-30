@@ -2,6 +2,51 @@
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
 
+/*Start of Week 3 Assignment*/
+:root {
+   --hsl-step-1: hsl(145 35% 15%);
+   --hsl-step-2: hsl(145 30% 40%);
+   --hsl-step-3: hsl(145 25% 85%);
+   --hsl-step-4: hsl(145 30% 96%);
+
+/* OKLCH looks more evenly spaced. WebAIM contrast ratio is 14.09:1 way above the 4.5:1 minimum */
+   --colors-step-1: oklch(25% 0.05 145);
+   --colors-step-2: oklch(45% 0.08 145);
+   --colors-step-3: oklch(85% 0.04 145);
+   --colors-step-4: oklch(96% 0.015 145);
+
+}
+
+body{
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: var(--colors-step-1);
+   background-color: var(--colors-step-4);
+}
+
+h1 {
+   text-wrap:balance;
+   font-size: 2.5rem;
+   line-height: 1;
+}
+h2 {
+   text-wrap:balance;
+   font-size: 1.75rem;
+   line-height: 1.3;
+}
+
+a{
+   color: var(--colors-step-1);
+   text-decoration: none;
+}
+
+a:hover{
+   color: color-mix(in srgb, hsl(145 35% 15%), blue); 
+}
+
+
+
 /*Start of Week 2 Assignment: Box Model Card*/
 
 *{
@@ -33,36 +78,38 @@
 }
 /*End of Week 2 Assignment: Box Model Card*/
 
+
 /*this changes the background color of the page to tan*/   
-body {
+
+/* body {
    background-color: tan;
 }   
 /*changes the color of all the paragraphs to brown and increase the line spacing*/
-p {
+/*p {
    color: brown;
    line-height: 2;
 }
 /*changes the color of all the h2 headings to yellow*/
-h2 {
+/*h2 {
    color: yellow;
    font-family: sans-serif;
 }
 /*groups the h2 headings and the paragraphs into one rule*/ 
-p,h2 {
+/*p,h2 {
    font-style: italic;
 
 }
 /*styles the intro paragraph differently from the rest using the class selector*/
-.intro {
+/*.intro {
    font-style: normal;
    color: black;
 }
 /*styles the summit heading in a different color*/
-#summit {
+/*#summit {
    color: blue;
 }
 /* to test that the later rule wins*/
-h2 {
+/*h2 {
    color: black;
-}
+}  */
 
